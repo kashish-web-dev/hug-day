@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Hug Day</title>
+<title>Happy Hug Day Akshat ❤️</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
 
 <style>
@@ -69,14 +70,15 @@ section{
 }
 
 h1{
-    font-size:60px;
+    font-size:55px;
     margin-bottom:20px;
 }
 
 p{
-    max-width:700px;
+    max-width:750px;
     font-size:20px;
     margin-bottom:30px;
+    line-height:1.8;
 }
 
 button{
@@ -118,7 +120,7 @@ button:hover{
     <div>
         <a href="#home">Home</a>
         <a href="#about">Why Hugs?</a>
-        <a href="#final">Your Hug</a>
+        <a href="#final">For Akshat</a>
     </div>
 </nav>
 
@@ -130,18 +132,40 @@ button:hover{
 
 <section id="about">
     <h1>Why Hugs Matter</h1>
-    <p>Hugs reduce stress, increase happiness, and create emotional safety.  
-    They are small gestures with powerful magic.</p>
-    <button onclick="window.scrollTo(0, document.body.scrollHeight)">Feel It</button>
+    <p>Hugs reduce stress, increase happiness, and create emotional safety.
+       They are small gestures with powerful magic.</p>
+    <button onclick="window.location.href='#final'">Go To Your Surprise</button>
 </section>
 
 <section id="final">
-    <h1>One Hug. Endless Love.</h1>
-    <p>Close your eyes and imagine the tightest hug filled with warmth, comfort, and forever care.</p>
-    <button onclick="alert('🤗 Big Warm Hug Delivered Successfully!')">Get Your Hug</button>
+    <h1>For You, Akshat 🤍</h1>
+    
+    <p>
+        Happy Hug Day, Akshat 🤗 <br><br>
+        
+        If I could be there right now, I would wrap my arms around you 
+        and never let go. I hope you know how special you are to me.  
+        
+        Your hugs feel like home, like safety, like peace.  
+        Whenever life feels heavy, just remember — I am always here for you.  
+        
+        I wish I could give you the tightest hug today, 
+        one filled with love, warmth, and comfort.  
+        
+        No matter the distance or situation, 
+        my arms will always be open for you. ❤️
+        
+        This hug carries all my love… just for you.
+    </p>
+
+    <button onclick="showHug()">Open Your Hug 🤗</button>
 </section>
 
 <script>
+function showHug(){
+    alert("🤗 A Tight Warm Hug For You, Akshat ❤️\n\nYou are loved more than you know.");
+}
+
 for(let i=0;i<25;i++){
     let heart=document.createElement("div");
     heart.className="heart";
